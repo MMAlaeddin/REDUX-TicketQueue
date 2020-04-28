@@ -1,10 +1,10 @@
 import ticketListReducer from '../../reducers/ticket-list-reducer';
 
-
-
 //variable = ticketListReducer
 //ticketListReducer takes 2 arguments (1: current state, 2: an action being applied to the current state)
 describe('ticketListReducer', () => {
+
+  let action;
 
   const currentState = {
     1: {names: 'Ryan & Aimen',
@@ -17,7 +17,6 @@ describe('ticketListReducer', () => {
     id: 2 }
   }
 
-  let action;
   const tickeData = {
     names: "Ryan and Aimen",
     location: "4b",
